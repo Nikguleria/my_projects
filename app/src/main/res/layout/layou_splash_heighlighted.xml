@@ -37,6 +37,7 @@
             android:background="@android:color/transparent"
             android:gravity="center"
             android:text="@string/welcome_string"
+            android:textSize="@dimen/_24sdp"
             android:textColor="@color/white"
             app:fonttextview="@string/font_lucida_sans_demibold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -61,10 +62,11 @@
 
         <com.softuvo.frp.views.CustomTextView
             android:id="@+id/btn_members"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
             android:background="@drawable/background_round_corner"
             android:text="@string/members_string"
+            android:gravity="center"
             android:textColor="@color/white"
             app:fonttextview="@string/fontlucida_sans_regular"
             app:layout_constraintEnd_toStartOf="@+id/btn_guest"
@@ -74,13 +76,12 @@
 
         <com.softuvo.frp.views.CustomTextView
             android:id="@+id/btn_guest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
             android:background="@drawable/background_round_corner"
             android:text="@string/guest_string"
             android:textColor="@color/white"
             app:fonttextview="@string/fontlucida_sans_regular"
-
             app:layout_constraintBottom_toBottomOf="@+id/btn_members"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_chainStyle="spread"
@@ -89,8 +90,8 @@
 
         <com.softuvo.frp.views.CustomTextView
             android:id="@+id/btn_live_djs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_marginTop="@dimen/twelve_dp"
             android:background="@drawable/background_round_corner"
             android:text="@string/Live_djs_string"
