@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_user_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/eight_dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/three_dp"
+    android:visibility="visible"
+    android:weightSum="1">
+
+    <com.softuvo.frp.views.CustomTextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.22"
+        android:padding="@dimen/six_dp" />
+
+    <com.softuvo.frp.views.CustomTextView
+        android:id="@+id/tv_time_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.18"
+        android:padding="@dimen/six_dp"
+        />
+
+    <!--<ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.35"
+        android:max="100"
+        android:paddingEnd="@dimen/four_dp"
+        android:paddingLeft="@dimen/four_dp"
+        android:paddingRight="@dimen/four_dp"
+        android:paddingStart="@dimen/four_dp"
+        android:progress="50"
+        android:progressDrawable="@drawable/progressbar_layer_list" />-->
+
+  <!--  <com.softuvo.basiceld.views.CustomTextView
+        android:id="@+id/tv_errors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.25"
+        android:background="@mipmap/inner_polygon"
+        android:padding="@dimen/six_dp"
+        android:paddingBottom="@dimen/three_dp"
+        android:paddingTop="@dimen/three_dp"
+        app:fonttextview="@string/font_medium" />-->
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#E6FE5C5C</color>
+    <color name="colorAccent">#E6FE5C5C</color>
+    <color name="colorMember">#E645EBEB</color>
+    <color name="colorGuest">#E6CCDA0C</color>
+    <color name="colorLiveDjs">#E6FE5C5C</color>
+    <color name="color_text_yellow">#E6FE5C5C</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="dialog_black">#D9000000</color>
+    <color name="dialog_white">#0Dffffff</color>
+    <color name="dialog_black_60_transparency">#E6000000</color>
+    <color name="logs_table_header">#e8b6b7</color>
+    <color name="highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="black">#000000</color>
+    <color name="orange">#EF6C00</color>
+    <color name="green">#43A047</color>
+    <color name="red">#E53935</color>
+
+    <color name="btn_blue">#3593EB</color>
+    <color name="btn_red">#B00003</color>
+    <color name="yellow">#FFE500</color>
+
+    <color name="translucentblack">#99000000</color>
+    <color name="transparentblack">#D9000000</color>
+
+    <color name="grey">#A1A1A1</color>
+    <color name="light_grey">#FAFAFB</color>
+    <color name="green_floating_button">#77B342</color>
+    <color name="dark_grey">#4B4B4B</color>
+
+</resources>

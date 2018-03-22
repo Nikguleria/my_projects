@@ -1,0 +1,28 @@
+<resources>
+    <!--
+    ================================================================================================
+    App Level
+    ================================================================================================
+    -->
+    <string name="app_name">FRP</string>
+    <string name="font_lucida_sans_demibold">Lucida Sans Demibold Roman.ttf</string>
+    <string name="fontlucida_sans_regular">Lucida Sans Regular.ttf</string>
+    <string name="fields_error_message">Field can not be empty</string>
+    <string name="password_match_error_message">Oops! Password does not matches</string>
+    <string name="password_format_error_message">Must be atleast 6 characters,have atleast 1 capital letter,one number and one special character</string>
+
+
+    <!--
+    ================================================================================================
+    Splash Screen
+    ================================================================================================
+    -->
+    <string name="welcome_string">WELCOME TO  <font color="#E6FE5C5C">FRP</font></string>
+    <string name="splash_desc_string">Franchise Record Pool has grown to become the largest and most
+        advanced music promotion service for Record Labels, Artists and DJs.</string>
+    <string name="members_string">Members</string>
+    <string name="guest_string">Guest</string>
+    <string name="Live_djs_string">Live Djs</string>
+
+
+</resources>

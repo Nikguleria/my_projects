@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="shorthaultype">
+        <item>No Exception</item>
+        <item>16 Hour Short Exception</item>
+    </string-array>
+
+    <string-array name="farmschooltype">
+        <item>No Exception</item>
+        <item>Farm/School Bus Exception</item>
+    </string-array>
+
+</resources>

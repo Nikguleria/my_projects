@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="fonttextview" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomEditText">
+        <attr name="fontedittext" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomButton">
+        <attr name="fontbutton" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="HOSChart">
+        <attr name="hosNumRow">4</attr>
+        <attr name="hosNumColumn">4</attr>
+    </declare-styleable>
+</resources>

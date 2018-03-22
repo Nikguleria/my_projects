@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingTop="12dp"
+    tools:context="com.softuvo.frp.activities.AddRemarksActivity">
+
+    <include
+        android:id="@+id/user_layout_detail"
+        layout="@layout/layout_user_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eight_dp"
+        android:layout_marginLeft="@dimen/eight_dp"
+        android:layout_marginRight="@dimen/eight_dp"
+        android:layout_marginStart="@dimen/eight_dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_layout_detail">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp">
+            <ImageView
+                android:id="@+id/iv_graph"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@null"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline_50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="206dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <com.softuvo.frp.views.CustomTextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="start_time"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline_05"
+                app:layout_constraintTop_toBottomOf="@+id/iv_graph" />
+
+            <com.softuvo.frp.views.CustomTextView
+                android:id="@+id/tv_start_time_edt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:paddingBottom="4dp"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_start_time"
+                app:layout_constraintRight_toLeftOf="@+id/guideline_50"
+                app:layout_constraintTop_toBottomOf="@+id/tv_start_time" />
+
+            <com.softuvo.frp.views.CustomTextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_start_time"
+                app:layout_constraintTop_toBottomOf="@+id/tv_start_time_edt"
+                app:layout_constraintRight_toLeftOf="@+id/guideline_95"
+                android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <com.softuvo.frp.views.CustomEditText
+                android:id="@+id/et_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:paddingBottom="4dp"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_start_time"
+                app:layout_constraintRight_toLeftOf="@+id/guideline_95"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+            <com.softuvo.frp.views.CustomTextView
+                android:id="@+id/tv_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_start_time"
+                app:layout_constraintTop_toBottomOf="@+id/et_location" />
+
+            <com.softuvo.frp.views.CustomEditText
+                android:id="@+id/et_notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:inputType="textCapWords"
+                android:paddingBottom="4dp"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_start_time"
+                app:layout_constraintRight_toLeftOf="@+id/guideline_95"
+                app:layout_constraintTop_toBottomOf="@+id/tv_notes" />
+
+            <com.softuvo.frp.views.CustomTextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/four_dp"
+                android:paddingLeft="@dimen/twenty_four_dp"
+                android:paddingRight="@dimen/twenty_four_dp"
+                android:paddingTop="@dimen/four_dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline_05"
+                app:layout_constraintTop_toBottomOf="@+id/et_notes" />
+
+            <com.softuvo.frp.views.CustomTextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/four_dp"
+                android:paddingLeft="@dimen/twenty_four_dp"
+                android:paddingRight="@dimen/twenty_four_dp"
+                android:paddingTop="@dimen/four_dp"
+                app:layout_constraintRight_toLeftOf="@+id/guideline_95"
+                app:layout_constraintTop_toBottomOf="@+id/et_notes" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
+
+
+

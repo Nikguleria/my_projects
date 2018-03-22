@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/main_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.softuvo.frp.views.CustomTextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="@dimen/text_size_twent_four"
+            android:autoSizeMinTextSize="@dimen/text_size_fifty_two"
+            android:autoSizeTextType="uniform"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/welcome_string"
+            android:textColor="@color/white"
+            app:fonttextview="@string/font_lucida_sans_demibold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_app_logo" />
+
+        <com.softuvo.frp.views.CustomTextView
+            android:id="@+id/tv_app_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="@dimen/text_size_twent_four"
+            android:autoSizeMinTextSize="@dimen/text_size_fifty_two"
+            android:autoSizeTextType="uniform"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/splash_desc_string"
+            android:textColor="@color/white"
+            app:fonttextview="@string/fontlucida_sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+
+        <com.softuvo.frp.views.CustomTextView
+            android:id="@+id/btn_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_round_corner"
+            android:text="@string/members_string"
+            android:textColor="@color/white"
+            app:fonttextview="@string/fontlucida_sans_regular"
+            app:layout_constraintEnd_toStartOf="@+id/btn_guest"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_app_desc" />
+
+        <com.softuvo.frp.views.CustomTextView
+            android:id="@+id/btn_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_round_corner"
+            android:text="@string/guest_string"
+            android:textColor="@color/white"
+            app:fonttextview="@string/fontlucida_sans_regular"
+
+            app:layout_constraintBottom_toBottomOf="@+id/btn_members"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/btn_members"
+            app:layout_constraintTop_toTopOf="@+id/btn_members" />
+
+        <com.softuvo.frp.views.CustomTextView
+            android:id="@+id/btn_live_djs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:background="@drawable/background_round_corner"
+            android:text="@string/Live_djs_string"
+            android:textColor="@color/white"
+            app:fonttextview="@string/fontlucida_sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_guest" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
